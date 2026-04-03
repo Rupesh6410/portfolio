@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import CursorGlow from "@/components/CursorGlow";
+import Navbar from "@/components/Navbar";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -39,7 +41,9 @@ export default function RootLayout({
         </div>
 
         {/* 🧱 MAIN CONTENT */}
-        <main className="flex-1">{children}</main>
+        <Navbar />
+        <main className="flex-1 pt-24">{children}</main>
+        <CursorGlow />
       </body>
     </html>
   );
