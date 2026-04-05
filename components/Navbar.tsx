@@ -92,7 +92,7 @@ export default function Navbar() {
                   onClick={() => handleScroll("contact")}
                   className="mt-2 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700"
                 >
-                  Hire Me
+                  Contact Me
                 </button>
               </div>
             </motion.div>

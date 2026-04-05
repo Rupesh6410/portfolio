@@ -30,17 +30,16 @@ export default function RootLayout({
     >
       <body className="bg-black text-white font-sans min-h-screen antialiased relative overflow-x-hidden">
         
-        {/* 🌌 GLOBAL BACKGROUND */}
+        
         <div className="fixed inset-0 -z-10">
-          {/* Gradient blobs */}
+        
           <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-purple-600/30 blur-3xl rounded-full" />
           <div className="absolute bottom-[-120px] right-[-120px] w-[400px] h-[400px] bg-blue-600/20 blur-3xl rounded-full" />
 
-          {/* Grid overlay */}
+        
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]" />
         </div>
 
-        {/* 🧱 MAIN CONTENT */}
         <Navbar />
         <main className="flex-1 pt-24">{children}</main>
         <CursorGlow />
