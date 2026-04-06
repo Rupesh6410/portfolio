@@ -5,6 +5,13 @@ import Hero3D from "./Hero3D";
 import { Backlight } from "./ui/backlight";
 
 export default function Hero() {
+
+  const scrollTo = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth" as ScrollBehavior,
+    block: "start",
+  });
+};
   return (
     <section
       id="home"
@@ -55,11 +62,11 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
             className="flex gap-4 mt-6"
           >
-            <button className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition">
+            <button className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition" onClick={() => scrollTo("projects")}>
               View Projects
             </button>
 
-            <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-white transition">
+            <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-white transition" onClick={() => scrollTo("contact")}>
               Contact Me
             </button>
           </motion.div>

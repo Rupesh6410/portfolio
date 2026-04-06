@@ -12,7 +12,7 @@ export default function Hero3D() {
         <ambientLight intensity={1} />
         <directionalLight position={[2, 2, 2]} />
         
-        <AnimatedSphere /> {/* ✅ INSIDE CANVAS */}
+        <AnimatedSphere />
       </Canvas>
     </div>
   );

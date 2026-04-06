@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import CursorGlow from "@/components/CursorGlow";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -41,7 +42,18 @@ export default function RootLayout({
         </div>
 
         <Navbar />
-        <main className="flex-1 pt-24">{children}</main>
+        <main className="flex-1 pt-24">
+          {children}
+           <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              background: "#111",
+              color: "#fff",
+              border: "1px solid #333",
+            },
+          }} />
+        </main>
         <CursorGlow />
       </body>
     </html>

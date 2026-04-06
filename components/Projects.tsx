@@ -1,30 +1,30 @@
 "use client";
 import { Backlight } from "@/components/ui/backlight";
 import { motion } from "framer-motion";
-import { LampContainer } from "@/components/ui/lamp";
+
 
 
 const projects = [
   {
-    title: "AI Resume Builder",
-    desc: "Generates ATS-optimized resumes based on job descriptions using AI.",
-    tech: ["Next.js", "OpenAI", "Tailwind"],
-    live: "#",
-    github: "#",
+    title: "AI ShortsBuilder",
+    desc: "Generates short videos from text using AI.",
+    tech: ["Next.js", "AWS", "DOCKER" , "GenAI" , "PostgreSQL"],
+    live: "https://shortsgenerator-lilac.vercel.app/",
+    github: "https://github.com/Rupesh6410/shortsgenerator",
   },
   {
-    title: "Startup CRM Tool",
-    desc: "Track outreach, leads, and follow-ups for startups.",
-    tech: ["React", "Node.js", "PostgreSQL"],
-    live: "#",
-    github: "#",
+    title: "Ecommerce Store",
+    desc: "A full-stack e-commerce platform with payment integration.",
+    tech: ["React", "Node.js", "MongoDB", "Express"],
+    live: "https://ecommerce-store-eight-drab.vercel.app/",
+    github: "https://github.com/Rupesh6410/EcommerceStore",
   },
   {
-    title: "DevOps Dashboard",
-    desc: "Monitor deployments, logs, and infra in real-time.",
-    tech: ["Docker", "AWS", "Next.js"],
-    live: "#",
-    github: "#",
+    title: "Trip Planner",
+    desc: "Plan your trips with this intuitive trip planning app.",
+    tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    live: "https://ai-trip-planner-six-rose.vercel.app/",
+    github: "https://github.com/Rupesh6410/ai-trip-planner",
   },
 ];
 
@@ -77,10 +77,10 @@ export default function Projects() {
 
             {/* LINKS */}
             <div className="flex gap-4 text-sm">
-              <a href={project.live} className="text-purple-400 hover:underline">
+              <a href={project.live} className="text-purple-400 hover:underline" target="_blank" rel="noopener noreferrer">
                 Live →
               </a>
-              <a href={project.github} className="text-gray-400 hover:underline">
+              <a href={project.github} className="text-gray-400 hover:underline" target="_blank" rel="noopener noreferrer">
                 Code →
               </a>
             </div>
